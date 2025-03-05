@@ -37,7 +37,7 @@ const AboutSection = () => {
     <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
         {/* Company Introduction */}
-        <div className="max-w-4xl mx-auto text-center mb-20">
+        <div className="max-w-6xl mx-auto text-center mb-20">
           <span className="text-blue-600 font-medium mb-4 block">
             Tecrübe ve Güvenilirlik
           </span>
