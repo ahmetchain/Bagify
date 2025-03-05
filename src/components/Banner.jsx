@@ -23,14 +23,16 @@ const Banner = () => {
     {
       image: slider3,
       alt: "Professional bag care",
-      title: "Garantili Hizmet",
-      description: "Tüm tamir ve bakım işlemlerinde garanti",
+      title: "Eskimez Şıklık, Profesyonel Tamir",
+      description:
+        "Uzman tamir hizmetimizle sevdiğiniz aksesuarları uzun yıllar kullanmaya devam edin.",
     },
     {
       image: slider4,
       alt: "Professional bag care",
-      title: "Garantili Hizmet",
-      description: "Tüm tamir ve bakım işlemlerinde garanti",
+      title: "Garantili Tamir & Bakım Hizmeti",
+      description:
+        "Çanta ve valizlerinizi ilk günkü gibi kullanmaya devam edin! Bagify olarak, hasarlı ve yıpranmış ürünlerinizi profesyonelce onarıyor, uzun ömürlü kullanım sağlıyoruz.",
     },
     {
       image: slider5,
@@ -138,7 +140,9 @@ const Banner = () => {
           <div className="w-0.5 h-10 md:h-16 bg-white/30 rounded-full relative overflow-hidden">
             <div className="w-full h-1/2 bg-blue-600 absolute top-0 animate-scroll-down" />
           </div>
-          <span className="text-white text-xs md:text-sm mt-2">Aşağı Kaydır</span>
+          <span className="text-white text-xs md:text-sm mt-2">
+            Aşağı Kaydır
+          </span>
         </div>
       </div>
     </div>

@@ -1,9 +1,4 @@
-import {
-  MapPin,
-  Mail,
-  Phone,
-  Instagram,
-} from "lucide-react";
+import { MapPin, Mail, Phone, Instagram } from "lucide-react";
 
 const XIcon = ({ className }) => (
   <svg viewBox="0 0 24 24" className={className} fill="currentColor">
@@ -24,13 +19,15 @@ const Footer = () => {
             <h3 className="text-xl font-semibold text-white mb-6">
               İletişim Bilgileri
             </h3>
-            <div className="flex items-start space-x-3">
-              <MapPin className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
-              <p>
-                Donanmacı, Ulvi Başman Sk. 35 E, 35510 Donanmacı
-                Mah./Karşıyaka/İzmir
-              </p>
-            </div>
+            <a href="https://maps.app.goo.gl/jFLe82DDe2bMjTbh7" target="_blank" rel="noopener noreferrer">
+              <div className="flex items-start space-x-3">
+                <MapPin className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
+                <p className="hover:text-blue-400 transition-colors">
+                  Donanmacı, Ulvi Başman Sk. 35 E, 35510 Donanmacı
+                  Mah./Karşıyaka/İzmir
+                </p>
+              </div>
+            </a>
             <div className="flex items-center space-x-3">
               <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
               <a

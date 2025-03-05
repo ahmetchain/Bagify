@@ -17,7 +17,7 @@ const Header = () => {
               </a>
               <div className="flex items-center space-x-2">
                 <Clock size={16} className="text-blue-300" />
-                <span className="text-xs sm:text-sm">Pzt-Cmt: 09:00-18:00</span>
+                <span className="text-xs sm:text-sm">Pzt-Pazr: 09:00-21:00</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin size={16} className="text-blue-300" />
