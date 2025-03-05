@@ -3,7 +3,6 @@ import {
   Mail,
   Phone,
   Instagram,
-  Whatsapp
 } from "lucide-react";
 
 const XIcon = ({ className }) => (

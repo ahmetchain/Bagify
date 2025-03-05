@@ -9,10 +9,12 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between text-sm">
             <div className="flex items-center space-x-6">
-              <div className="flex items-center space-x-2">
-                <Phone size={16} className="text-blue-300" />
-                <span className="text-xs sm:text-sm">+90 554 281 28 71</span>
-              </div>
+              <a href="tel:+905542812871">
+                <div className="flex items-center space-x-2">
+                  <Phone size={16} className="text-blue-300" />
+                  <span className="text-xs sm:text-sm">+90 554 281 28 71</span>
+                </div>
+              </a>
               <div className="flex items-center space-x-2">
                 <Clock size={16} className="text-blue-300" />
                 <span className="text-xs sm:text-sm">Pzt-Cmt: 09:00-18:00</span>
@@ -44,10 +46,12 @@ const Header = () => {
             <div className="  md:text-lg font-medium text-blue-900 italic  md:block">
               "Çantanız Bizimle Güvende"
             </div>
-            <button className="hidden md:flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full transition-all transform ">
-              <MessageCircle size={20} />
-              <span>Bizimle İletişime Geçin</span>
-            </button>
+            <a href="https://wa.me/+905542812871" target="_blank" rel="noreferrer">
+              <button className="hidden md:flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full transition-all transform ">
+                <MessageCircle size={20} />
+                <span>Bizimle İletişime Geçin</span>
+              </button>
+            </a>
           </div>
         </div>
       </div>
