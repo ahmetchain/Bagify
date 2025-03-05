@@ -17,8 +17,6 @@ const Banner = () => {
     {
       image: slider2,
       alt: "Luxury bag restoration",
-      title: "Kaliteli Malzeme",
-      description: "En kaliteli malzemeler ile orijinal görünüm",
     },
     {
       image: slider3,
@@ -37,14 +35,10 @@ const Banner = () => {
     {
       image: slider5,
       alt: "Professional bag care",
-      title: "Garantili Hizmet",
-      description: "Tüm tamir ve bakım işlemlerinde garanti",
     },
     {
       image: slider6,
       alt: "Professional bag care",
-      title: "Garantili Hizmet",
-      description: "Tüm tamir ve bakım işlemlerinde garanti",
     },
   ];
 
