@@ -1,13 +1,23 @@
 import { MapPin, Mail, Phone, Instagram } from "lucide-react";
 
-const XIcon = ({ className }) => (
-  <svg viewBox="0 0 24 24" className={className} fill="currentColor">
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-  </svg>
-);
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  const scrollToServices = (e) => {
+    e.preventDefault();
+    const servicesSection = document.getElementById('services');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToAbout = (e) => {
+    e.preventDefault();
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -60,18 +70,13 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
+                <a href="#services" onClick={scrollToServices} className="hover:text-blue-400 transition-colors">
                   Hizmetlerimiz
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
+                <a href="#about" onClick={scrollToAbout} className="hover:text-blue-400 transition-colors">
                   Hakkımızda
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
-                  İletişim
                 </a>
               </li>
             </ul>

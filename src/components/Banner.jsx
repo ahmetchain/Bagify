@@ -7,37 +7,51 @@ import slider4 from "../assets/4.png";
 import slider5 from "../assets/5.png";
 import slider6 from "../assets/6.png";
 
+import mobileSlider from "../assets/mobile.png"
+import mobileSlider2 from "../assets/mobile2.png"
+import mobileSlider3 from "../assets/mobile3.png"
+import mobileSlider4 from "../assets/mobile4.png"
+import mobileSlider5 from "../assets/mobile5.png"
+
+
 const Banner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
       image: slider1,
+      mobileImage: mobileSlider,
+      alt: "Leather bag repair"
     },
     {
       image: slider2,
+      mobileImage: mobileSlider2,
       alt: "Luxury bag restoration",
     },
     {
       image: slider3,
+      mobileImage: mobileSlider3,
       alt: "Professional bag care",
       title: "Eskimez Şıklık, Profesyonel Tamir",
       description:
-        "Uzman tamir hizmetimizle sevdiğiniz aksesuarları uzun yıllar kullanmaya devam edin.",
+        "Uzman tamir hizmetimizle sevdiğiniz aksesuarları uzun yıllar kullanmaya devam edin.",
     },
     {
       image: slider4,
+      mobileImage: slider4,
       alt: "Professional bag care",
       title: "Garantili Tamir & Bakım Hizmeti",
       description:
-        "Çanta ve valizlerinizi ilk günkü gibi kullanmaya devam edin! Bagify olarak, hasarlı ve yıpranmış ürünlerinizi profesyonelce onarıyor, uzun ömürlü kullanım sağlıyoruz.",
+        "Çanta ve valizlerinizi ilk günkü gibi kullanmaya devam edin! Bagify olarak, hasarlı ve yıpranmış ürünlerinizi profesyonelce onarıyor, uzun ömürlü kullanım sağlıyoruz.",
     },
     {
       image: slider5,
+      mobileImage: mobileSlider5,
       alt: "Professional bag care",
     },
     {
       image: slider6,
+      mobileImage: mobileSlider4,
       alt: "Professional bag care",
     },
   ];
@@ -55,7 +69,7 @@ const Banner = () => {
   return (
     <div className="relative h-[75vh] md:h-[80vh] lg:h-[88vh] overflow-hidden">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-900/20 to-gray-900/80 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-900/5 to-gray-900/50 z-10" />
 
       {/* Slider */}
       <div className="relative h-full">
@@ -69,11 +83,14 @@ const Banner = () => {
                   : "opacity-0 scale-110"
               }`}
           >
-            <img
-              src={slide.image}
-              alt={slide.alt}
-              className="w-full h-full object-cover object-center md:object-[center_20%]"
-            />
+            <picture>
+              <source media="(max-width: 768px)" srcSet={slide.mobileImage} />
+              <img
+                src={slide.image}
+                alt={slide.alt}
+                className="w-full h-full object-cover object-center md:object-[center_20%]"
+              />
+            </picture>
           </div>
         ))}
       </div>

@@ -93,12 +93,12 @@ const ServiceSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="services" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
           {/* Left Side - Service Showcase */}
           <div className="w-full lg:w-1/2">
-            <h2 className="text-3xl font-bold mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8">
               Profesyonel Çanta ve Valiz
               <span className="text-blue-600 block mt-1">
                 Tamir Hizmetlerimiz
@@ -121,10 +121,15 @@ const ServiceSection = () => {
                 </div>
               ))}
             </div>
-
-            <button className="w-full mt-8 bg-blue-600 text-white py-4 px-6 rounded-xl font-semibold hover:bg-blue-700 transition-colors">
-              Hemen Başlayalım
-            </button>
+            <a
+              href="https://wa.me/+905542812871"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="w-full mt-8 bg-blue-600 text-white py-4 px-6 rounded-xl font-semibold hover:bg-blue-700 transition-colors">
+                Hemen Başlayalım
+              </button>
+            </a>
           </div>
 
           {/* Right Side - Before/After Slider */}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Canta from "../assets/canta.png";
 import Okul from "../assets/okul.png";
 import Valiz from "../assets/Valiz.png";
+import Erkek from "../assets/erkek.png"
 
 const AboutSection = () => {
   const [hoveredProduct, setHoveredProduct] = useState(null);
@@ -29,12 +30,12 @@ const AboutSection = () => {
       id: "tadilat",
       title: "TADİLAT",
       description: "Her türlü çanta ve valiz tamirat ve tadilatı.",
-      image: "/tadilat.jpg",
+      image: Erkek,
     },
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section id="about" className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
         {/* Company Introduction */}
         <div className="max-w-6xl mx-auto text-center mb-20">
