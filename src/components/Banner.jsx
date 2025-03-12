@@ -59,7 +59,6 @@ const Banner = () => {
   return (
     <div className="relative h-[75vh] md:h-[80vh] lg:h-[88vh] overflow-hidden">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-900/5 to-gray-900/50 z-10" />
 
       {/* Slider */}
       <div className="relative h-full">
@@ -101,12 +100,16 @@ const Banner = () => {
               >
                 {index === currentSlide && (
                   <>
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-3 md:mb-6">
-                      {slide.title}
-                    </h1>
-                    <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-5 md:mb-8">
-                      {slide.description}
-                    </p>
+                    {slide.title && slide.description && (
+                      <div className="bg-black  bg-opacity-70 p-4 md:p-8 rounded-lg">
+                        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-3 md:mb-6">
+                          {slide.title}
+                        </h1>
+                        <p className="text-md sm:text-xl md:text-2xl text-gray-200 mb-5 md:mb-8">
+                          {slide.description}
+                        </p>
+                      </div>
+                    )}
                   </>
                 )}
               </div>
