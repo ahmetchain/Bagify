@@ -122,7 +122,7 @@ const ServiceSection = () => {
               ))}
             </div>
             <a
-              href="https://wa.me/+905542812871"
+              href="https://wa.me/+905326521811"
               target="_blank"
               rel="noreferrer"
             >

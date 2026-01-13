@@ -13,10 +13,10 @@ const Header = () => {
           {/* Desktop View */}
           <div className="hidden md:flex items-center justify-between text-sm">
             <div className="flex items-center space-x-6">
-              <a href="tel:+905542812871" className="hover:text-blue-300 transition-colors">
+              <a href="tel:+905326521811" className="hover:text-blue-300 transition-colors">
                 <div className="flex items-center space-x-2">
                   <Phone size={16} className="text-blue-300" />
-                  <span>+90 554 281 28 71</span>
+                  <span>+90 532 652 18 11</span>
                 </div>
               </a>
               <div className="flex items-center space-x-2">
@@ -32,9 +32,9 @@ const Header = () => {
 
           {/* Mobile View */}
           <div className="md:hidden flex justify-center">
-            <a href="tel:+905542812871" className="flex items-center space-x-2 hover:text-blue-300 transition-colors">
+            <a href="tel:+905326521811" className="flex items-center space-x-2 hover:text-blue-300 transition-colors">
               <Phone size={16} className="text-blue-300" />
-              <span className="text-sm">+90 554 281 28 71</span>
+              <span className="text-sm">+90 532 652 18 11</span>
             </a>
           </div>
         </div>
@@ -60,7 +60,7 @@ const Header = () => {
               "Çantanız Bizimle Güvende"
             </div>
             <a 
-              href="https://wa.me/+905542812871" 
+              href="https://wa.me/+905326521811" 
               target="_blank" 
               rel="noreferrer"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition-all transform hover:scale-105 flex items-center space-x-2"
@@ -98,7 +98,7 @@ const Header = () => {
               "Çantanız Bizimle Güvende"
             </div>
             <a 
-              href="https://wa.me/+905542812871" 
+              href="https://wa.me/+905326521811" 
               target="_blank" 
               rel="noreferrer"
               className="bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-full transition-all flex items-center justify-center space-x-2"
